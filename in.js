@@ -1,0 +1,1 @@
+global.pug = require('pug')
