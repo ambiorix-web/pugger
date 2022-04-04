@@ -14,4 +14,3 @@ renderer(file, data)
 \description{
 Renders file using specified data.
 }
-\keyword{internal}

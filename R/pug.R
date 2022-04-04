@@ -14,7 +14,7 @@ pugger <- \(){
 #' @param file File to render.
 #' @param data Data to render variables.
 #' 
-#' @keywords internal
+#' @export
 renderer <- \(file, data) {
   content <- read_lines(file)
   ctx$call("pug.render", content, data)

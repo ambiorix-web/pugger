@@ -56,3 +56,16 @@ app$get("/", \(req, res) {
 
 app$start()
 ```
+
+__Outside of Ambiorix__
+
+Just use `renderer`.
+
+```r
+pugger::renderer(
+  "test.pug",
+  list(
+    iUsePugger = TRUE
+  )
+)
+```
