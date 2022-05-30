@@ -16,6 +16,9 @@ pugger <- \(){
 #' 
 #' @export
 renderer <- \(file, data) {
+  if(tools::file_ext(file) != "pug")
+    return()
+
   content <- read_lines(file)
   ctx$call("pug.render", content, data)
 }
